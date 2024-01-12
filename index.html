@@ -27,12 +27,12 @@
             <ul class="hero__content__combos">
                 <li class="hero__content__combos__combo">
                     <img src="/dist/imagens/logos/disney_star_plus.png" alt="">
-                    <button>Assine agora</button>
+                    <button class="button">Assine agora</button>
                     <span class="text--small">R$ 45,90/mês*</span>
                 </li>
                 <li class="hero__content__combos__combo">
                     <img src="/dist/imagens/logos/disney_star_plus.png" alt="">
-                    <button>Assine agora</button>
+                    <button class="button">Assine agora</button>
                     <span class="text--small">R$ 45,90/mês*</span>
                 </li>
 
@@ -45,12 +45,64 @@
     </section>
     <section class="shows">
         <nav class="shows__tabs">
-            <button class="shows__tabs__buton">Em breve</button>
-            <button class="shows__tabs__buton">Mais populares</button>
-            <button class="shows__tabs__buton">Mais no star+</button>
+            <button data-tab-button="em_breve" class="shows__tabs__buton shows__tabs__buton--is-active">Em breve</button>
+            <button data-tab-button="populares" class="shows__tabs__buton">Mais populares</button>
+            <button data-tab-button="mais" class="shows__tabs__buton">Mais no star+</button>
 
         </nav>
-        <ul class="shows__list">
+        <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
+            <li class="shows__list__item">
+                <img src="./dist/imagens/em_breve/desencantada.jpg" alt="">
+
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/imagens/em_breve/lobisomem.jpg" alt="">
+
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/imagens/em_breve/sem_limites.jpg" alt="">
+
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/imagens/em_breve/spidey.jpg" alt="">
+
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/imagens/em_breve/the_santa_clauses.jpg" alt="">
+
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/imagens/em_breve/willow.jpg" alt="">
+
+            </li>
+        </ul>
+        <ul data-tab-id="populares" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/imagens/em_breve/desencantada.jpg" alt="">
+
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/imagens/em_breve/lobisomem.jpg" alt="">
+
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/imagens/em_breve/sem_limites.jpg" alt="">
+
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/imagens/em_breve/spidey.jpg" alt="">
+
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/imagens/em_breve/the_santa_clauses.jpg" alt="">
+
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/imagens/em_breve/willow.jpg" alt="">
+
+            </li>
+        </ul>
+        <ul data-tab-id="mais" class="shows__list">
             <li class="shows__list__item">
                 <img src="./dist/imagens/em_breve/desencantada.jpg" alt="">
 
@@ -78,6 +130,66 @@
         </ul>
 
     </section>
+    <section class="plans">
+        <h2 class="title--big">
+            Escolha seu plano
+        </h2>
+        <ul class="plans__list">
+            <li class="plans__list__item">
+                <img src="./dist/imagens/logos/disneyplus_underline.png" alt="">
+                <strong class="title--small">
+                    R$ 27,90/Mês*
+                </strong>
+                <p class="text--small">
+                    No Disney+ você encontra os ultimos lançamentos do cinema, originais, classicos e inesqusiveis
+
+                </p>
+
+                <button class="button">Assine agora</button>
+
+            </li>
+
+        </ul>
+        <ul class="plans__list">
+            <li class="plans__list__item">
+                <img src="./dist/imagens/logos/disney_star_plus_sm.png" alt="">
+                <strong class="title--small">
+                    R$ 27,90/Mês*
+                </strong>
+                <p class="text--small">
+                    No Disney+ você encontra os ultimos lançamentos do cinema, originais, classicos e inesqusiveis
+
+                </p>
+
+                <button class="button">Assine agora</button>
+
+            </li>
+
+        </ul>
+        <ul class="plans__list">
+            <li class="plans__list__item">
+                <img src="./dist/imagens/logos/disney_star_plus_starzplay_underline.png" alt="">
+                <strong class="title--small">
+                    R$ 27,90/Mês*
+                </strong>
+                <p class="text--small">
+                    No Disney+ você encontra os ultimos lançamentos do cinema, originais, classicos e inesqusiveis
+
+                </p>
+
+                <button class="button">Assine agora</button>
+
+            </li>
+
+        </ul>
+
+        <p class="text--small">
+
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+
+        </p>
+    </section>
+    <script src="/src/main.js"></script>
     
 </body>
 </html>

@@ -6,9 +6,13 @@
 
     &__list {
         margin-top: 44px;
-        display: grid;
+        display: none;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 24px;
+
+        &--is-active{
+            display: grid;
+        }
 
         &__item{
             
@@ -24,14 +28,19 @@
         justify-content: center;
 
         &__buton {
+            cursor: pointer;
             background-color: variaveis.$corTextoSecundario;
             font-size: 20px;
             border: none;
-            border-bottom: 5px solid variaveis.$corTextoSecundario;
             padding-bottom: 5px;
             background: none;
             text-transform: uppercase;
             margin: 0 1vw;
+
+            &--is-active{
+                border-bottom: 5px solid variaveis.$corTextoSecundario;
+
+            }
 
         }
     }
