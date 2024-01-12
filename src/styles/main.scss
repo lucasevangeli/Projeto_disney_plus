@@ -5,6 +5,7 @@
 @use 'availabe-devices';
 @use 'faq';
 @use 'footer';
+@use 'header';
 
 
 
@@ -28,6 +29,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Avenir, sans-serif;
+    list-style: none;
 }
 
 
@@ -81,7 +83,9 @@ text{
 
 .button{
     cursor: pointer;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 60px;
     font-size: 18px;
@@ -90,10 +94,25 @@ text{
     text-transform: uppercase;
     border: none;
     border-radius: 4px;
-    margin-top: 2vw;
-    margin-bottom: 8px;
+    border: solid 1px #6421ff;
+    text-decoration: none;
+    padding: 8px 14px;
+    letter-spacing: 1px;
     &:hover{
         background-color: #7235ff;
+    }
+
+    &--secondary {
+        border-color: #6421ff;
+        background-color: #0063e5;
+    }
+
+    &--dark {
+        border-color: #0063e5;
+        background-color: rgba(0, 0, 0, 0.8);
+        &:hover {
+            color: variaveis.$corDeFundo;
+        }
     }
     
 }

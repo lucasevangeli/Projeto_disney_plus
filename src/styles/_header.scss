@@ -1,0 +1,40 @@
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #040714;
+
+    &--is-hidden{
+        background-color: transparent;
+
+        .header {
+            &__logo, &__links__item:first-child{
+                opacity: 0;
+            }
+        }
+    }
+
+    &__container {
+        padding: 8px 16px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        margin: 5px;
+        max-width: 80px;
+        width: 100%;
+    }
+
+    &__links {
+        display: flex;
+
+        &__item {
+            margin: 5px;
+        }
+    }
+    .button {
+        height: 50px;
+    }
+}
+
