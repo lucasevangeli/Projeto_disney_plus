@@ -80,6 +80,7 @@ text{
 
 .title{
     @include title;
+    
 
     @media(max-width: 768px){
         @include title(24px);
@@ -145,9 +146,15 @@ text{
 
     h2{
         padding: 0 1vw;
+        
         p {
             padding-top: 20px;
 
+        }
+    }
+    .h2-line {
+        margin-left: -152px;
+        @media (max-width: 768px){
         }
     }
 
